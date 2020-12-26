@@ -1,0 +1,6 @@
+type Student @model {
+  id: ID!
+  name: String!
+  mark1: Float!
+  mark2: Float!
+}

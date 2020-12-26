@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-studentmarks-dev-143652-authRole",
+      "UnauthRoleArn": "arn:aws:iam::484938115775:role/amplify-studentmarks-dev-143652-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::484938115775:role/amplify-studentmarks-dev-143652-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-studentmarks-dev-143652-deployment",
+      "UnauthRoleName": "amplify-studentmarks-dev-143652-unauthRole",
+      "StackName": "amplify-studentmarks-dev-143652",
+      "StackId": "arn:aws:cloudformation:ap-south-1:484938115775:stack/amplify-studentmarks-dev-143652/b4964320-4759-11eb-9926-028b9ab9a492",
+      "AmplifyAppId": "d1xxyzt6i3tpsv"
+    },
+    "categories": {
+      "auth": {
+        "studentmarksb8498a9d": {}
+      }
+    }
+  }
+}

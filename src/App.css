@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,45 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+/**************custom****************/
+
+.App {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-class {
+  height: 20px;
+  width: 200px;
+  margin: 15px;
+}
+
+.paper-containers {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.edit-delete-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.validation {
+  margin-left: 10px;
+  color:  red;
+}
+.status{
+  color: blue;
 }
