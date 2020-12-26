@@ -60,7 +60,7 @@ function App() {
       setValidation("Name should be between 4 - 16 characters");
       return false;
     }
-    const regexp = new RegExp(`^-?[A-Za-z]*$`);
+    const regexp = new RegExp(`^-?[A-Za-z ]*$`);
     if (!regexp.test(data.name)) {
       setValidation("Invalid name! Try Again !");
       return false;
