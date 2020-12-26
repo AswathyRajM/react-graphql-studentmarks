@@ -224,7 +224,11 @@ function App() {
                 <div className="edit-delete-btn">
                   <button
                     disabled={editing}
-                    onClick={() => deleteStudent(Student)}
+                    onClick={() => {
+                      if (window.confirm("Confirm deletion..?")) {
+                        deleteStudent(Student);
+                      }
+                    }}
                   >
                     Delete Student
                   </button>
