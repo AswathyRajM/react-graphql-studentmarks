@@ -169,9 +169,10 @@ function App() {
             <h1 style={{ marginLeft: 10 }}>My Students</h1>
             <input
               className="input-class"
-              onChange={(e) =>
-                setFormData({ ...formData, name: e.target.value })
-              }
+              onChange={(e) => {
+                setFormData({ ...formData, name: e.target.value });
+                if (status !== "Editing..") setstatus("");
+              }}
               placeholder="Student name"
               value={formData.name}
             />
