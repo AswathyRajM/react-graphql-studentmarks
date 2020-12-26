@@ -143,7 +143,6 @@ function App() {
       setValidation("Fields Cannot be empty!");
       return;
     }
-    console.log(formData.name.length);
     if (!nameValidation(formData)) {
       return;
     }
@@ -151,10 +150,16 @@ function App() {
       return;
     }
 
-    await API.graphql({
-      query: updateStudentMutation,
-      variables: { input: formData },
-    });
+    try {
+      await API.graphql({
+        query: updateStudentMutation,
+        variables: { input: formData },
+      });
+    } catch {
+      setValidation("Try Again! (Mark should be a number)");
+      return;
+    }
+
     setEditing(false);
     fetchStudents();
     setFormData(initialFormState);
